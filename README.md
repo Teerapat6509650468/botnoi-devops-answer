@@ -25,6 +25,7 @@
 - มี IP:
   - `127.0.0.1/8` (IPv4) — ใช้เรียกตัวเอง
   - `::1/128` (IPv6) — ใช้ใน IPv6 เพื่อเรียกตัวเอง
+
 ภายในกรอบสีเหลือง แสดงข้อมูลเกี่ยวกับ Interface `ens4` 
 ```
 2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 ...
@@ -32,6 +33,7 @@
 - `ens4` คือชื่อของ network interface ที่เชื่อมต่อภายนอก
 - สถานะ: `UP` และ `LOWER_UP` หมายถึง interface กำลังทำงานและมีสายหรือสัญญาณเชื่อมต่ออยู่
 - `mtu 1460`: Maximum Transmission Unit — ขนาดสูงสุดของ packet ที่สามารถส่งได้
+
 ภายในกรอบสีม่วง แสดงข้อมูลเกี่ยวกับ IPv4 Address
 ```
 inet 10.0.1.7/32 metric 100 scope global dynamic ens4
@@ -41,6 +43,7 @@ inet 10.0.1.7/32 metric 100 scope global dynamic ens4
 - `metric 100`: ค่าลำดับความสำคัญของเส้นทาง routing (ยิ่งต่ำยิ่งมี priority สูง)
 - `dynamic`: แสดงว่า IP ได้รับมาจาก DHCP server
 - `scope global`: เป็น IP ที่ใช้ในเครือข่ายภายนอก (ไม่ใช่แค่ภายในเครื่อง)
+
 ภายในกรอบสีแดง แสดงข้อมูลเกี่ยวกับ IPv6 Address
 ```
 inet6 fe80::4001:aff:fe00:107/64 scope link
